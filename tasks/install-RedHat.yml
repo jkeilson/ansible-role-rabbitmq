@@ -1,7 +1,7 @@
 - name: Configure Erlang Yum repo
   yum_repository:
     name: rabbitmq-erlang
-    description: A repository for Erlang
+    description: Erlang
     baseurl: '{{ erlang_yum_baseurl }}' 
     gpgcheck: '{{ erlang_yum_gpgcheck }}' 
     gpgkey: '{{ erlang_yum_repo_gpgkey }}' 
@@ -9,7 +9,7 @@
 - name: Configure RabbitMQ Yum repo
   yum_repository:
     name: rabbitmq
-    description: A repository for RabbitMQ
+    description: RabbitMQ
     baseurl: '{{ rabbitmq_yum_baseurl }}' 
     gpgcheck: '{{ rabbitmq_yum_gpgcheck }}'
     repo_gpgcheck: '{{ rabbitmq_yum_repo_gpgcheck }}' 
